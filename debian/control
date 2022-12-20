@@ -1,0 +1,45 @@
+Source: ocaml-base64
+Section: ocaml
+Priority: optional
+Maintainer: Debian OCaml Maintainers <debian-ocaml-maint@lists.debian.org>
+Uploaders: Stéphane Glondu <glondu@debian.org>
+Build-Depends:
+ debhelper-compat (= 13),
+ ocaml-nox,
+ ocaml-dune,
+ libdune-ocaml-dev,
+ dh-ocaml
+Standards-Version: 4.5.0
+Rules-Requires-Root: no
+Vcs-Browser: https://salsa.debian.org/ocaml-team/ocaml-base64
+Vcs-Git: https://salsa.debian.org/ocaml-team/ocaml-base64.git
+Homepage: https://github.com/mirage/ocaml-base64
+
+Package: libbase64-ocaml-dev
+Provides: ${ocaml:Provides}
+Architecture: any
+Depends:
+ ${ocaml:Depends},
+ ${shlibs:Depends},
+ ${misc:Depends}
+Recommends: ocaml-findlib
+Description: Base64 encoding and decoding OCaml library (dev files)
+ Base64 is a group of similar binary-to-text encoding schemes that
+ represent binary data in an ASCII string format by translating it
+ into a radix-64 representation.  It is specified in RFC 2045.
+ .
+ This package contains development files.
+
+Package: libbase64-ocaml
+Provides: ${ocaml:Provides}
+Architecture: any
+Depends:
+ ${ocaml:Depends},
+ ${shlibs:Depends},
+ ${misc:Depends}
+Description: Base64 encoding and decoding OCaml library (runtime files)
+ Base64 is a group of similar binary-to-text encoding schemes that
+ represent binary data in an ASCII string format by translating it
+ into a radix-64 representation.  It is specified in RFC 2045.
+ .
+ This package contains runtime files.

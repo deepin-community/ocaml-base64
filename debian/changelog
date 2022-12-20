@@ -1,0 +1,28 @@
+ocaml-base64 (3.4.0-deepin1) unstable; urgency=medium
+
+  * Rebuild
+
+ -- Deepin Packages Builder <packages@deepin.org>  Mon, 14 Nov 2022 17:48:07 +0800
+
+ocaml-base64 (3.4.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * Bump debhelper compat level to 13
+  * Bump Standards-Version to 4.5.0
+  * Add Rules-Requires-Root: no
+
+ -- Stéphane Glondu <glondu@debian.org>  Thu, 06 Aug 2020 13:07:40 +0200
+
+ocaml-base64 (2.0.0-2) unstable; urgency=medium
+
+  * Add ocamlbuild to Build-Depends
+  * Bump Standards-Version to 4.0.0
+  * Bump debhelper compat to 10
+
+ -- Stéphane Glondu <glondu@debian.org>  Fri, 14 Jul 2017 15:11:36 +0200
+
+ocaml-base64 (2.0.0-1) unstable; urgency=medium
+
+  * Initial release (Closes: #834021)
+
+ -- Stéphane Glondu <glondu@debian.org>  Fri, 12 Aug 2016 09:31:33 +0200

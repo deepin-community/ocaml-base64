@@ -1,0 +1,5 @@
+@OCamlStdlibDir@/base64/META
+@OCamlStdlibDir@/base64/*.cma
+DYN: @OCamlStdlibDir@/base64/*.cmxs
+@OCamlStdlibDir@/base64/*/*.cma
+DYN: @OCamlStdlibDir@/base64/*/*.cmxs

@@ -1,0 +1,14 @@
+@OCamlStdlibDir@/base64/*opam*
+@OCamlStdlibDir@/base64/*dune*
+@OCamlStdlibDir@/base64/*.ml*
+@OCamlStdlibDir@/base64/*.cmi
+@OCamlStdlibDir@/base64/*.cmt*
+OPT: @OCamlStdlibDir@/base64/*.a
+OPT: @OCamlStdlibDir@/base64/*.cmx
+OPT: @OCamlStdlibDir@/base64/*.cmxa
+@OCamlStdlibDir@/base64/*/*.ml*
+@OCamlStdlibDir@/base64/*/*.cmi
+@OCamlStdlibDir@/base64/*/*.cmt*
+OPT: @OCamlStdlibDir@/base64/*/*.a
+OPT: @OCamlStdlibDir@/base64/*/*.cmx
+OPT: @OCamlStdlibDir@/base64/*/*.cmxa

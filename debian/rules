@@ -1,0 +1,21 @@
+#!/usr/bin/make -f
+
+include /usr/share/ocaml/ocamlvars.mk
+
+DESTDIR=$(CURDIR)/debian/tmp
+export OCAMLFIND_DESTDIR=$(DESTDIR)/$(OCAML_STDLIB_DIR)
+
+%:
+	dh $@ --with ocaml
+
+override_dh_auto_build:
+	dune build -p base64
+
+override_dh_auto_install:
+	dune install --destdir=$(DESTDIR) --prefix=/usr --libdir=..$(OCAML_STDLIB_DIR)
+	rm -f $(DESTDIR)/usr/doc/base64/LICENSE.md
+
+override_dh_auto_test:
+# Needs alcotest and bos
+
+override_dh_dwz:
