@@ -1,2 +1,2 @@
-version=3
+version=4
 https://github.com/mirage/ocaml-base64/tags .*/v([\d\.]+)\.tar\.gz
