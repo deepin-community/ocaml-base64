@@ -1,3 +1,2 @@
-(lang dune 1.0)
+(lang dune 2.3)
 (name base64)
-(version dev)
