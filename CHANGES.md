@@ -1,3 +1,17 @@
+### v3.5.1 (2023-01-24)
+
+- Few fixes about benchmarks and tests (#51, @tbrk, @dinosaure)
+- Add missing dependency about `fmt` and fix the compilation for OCaml 5.0 (#52, @kit-ty-kate)
+
+### v3.5.0 (2021-02-08)
+
+- Fix support for `x-compilation` (@samoht, #44)
+- Update to `dune.2.0` and apply `ocamlformat` (@samoht, #45)
+- Select `unsafe.ml` only with `dune` (@emillon, #46)
+- Remove indirect dependecy to `ocamlfind` (@kit-ty-kate, #49)
+- Hide internals of `base64` and return a `string` as the alphabet (@reynir, #48)
+  **breaking chnages** `Base64.alphabet` is updated and return a simple `string` now
+
 ### v3.4.0 (2020-03-13)
 
 - Fix tests about `alcotest.1.0.0` (@dinosaure, #40)
